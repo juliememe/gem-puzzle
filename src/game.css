@@ -1,0 +1,29 @@
+:root {
+    --cell-size: 30px;
+    --border: 1px solid black;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.board {
+    border: var(--border);
+    position: relative;
+    width: 0px;
+    height: 0px;
+}
+
+.cell {
+    position: absolute;
+    width: var(--cell-size);
+    height: var(--cell-size);
+    border: var(--border);
+    text-align: center;
+    transition: all 0.5s ease-out;
+    border-radius: 0;
+}
+
+.emptyCell {
+    border: none;
+}
